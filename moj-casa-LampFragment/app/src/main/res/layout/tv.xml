@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtCurrentChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="32dp"
+        android:text="Channel"
+        app:layout_constraintEnd_toStartOf="@+id/txtCurrentVolume"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCurrentVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Volume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/swTVMute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Mute"
+        app:layout_constraintStart_toEndOf="@+id/txtCurrentVolume"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTVSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Source"
+        app:layout_constraintStart_toEndOf="@+id/btnTVRight"
+        app:layout_constraintTop_toBottomOf="@+id/swTVMute" />
+
+    <Button
+        android:id="@+id/btnTVRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="∧"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCurrentVolume" />
+
+    <Button
+        android:id="@+id/btnTVHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Home"
+        app:layout_constraintEnd_toStartOf="@+id/btnTVRight"
+        app:layout_constraintTop_toBottomOf="@+id/txtCurrentChannel" />
+
+    <Button
+        android:id="@+id/btnTVDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:text=">"
+        app:layout_constraintEnd_toStartOf="@+id/btnTVUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/btnTVHome" />
+
+    <Button
+        android:id="@+id/btnTVUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text=">"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toEndOf="@+id/btnTVUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/btnTVSource" />
+
+    <Button
+        android:id="@+id/btnTVInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Info"
+        app:layout_constraintEnd_toStartOf="@+id/btnTVLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnTVDown" />
+
+    <Button
+        android:id="@+id/btnTVFormat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Format"
+        app:layout_constraintStart_toEndOf="@+id/btnTVLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnTVUp" />
+
+    <Button
+        android:id="@+id/btnTVLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="∨"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTVUpdate" />
+
+    <Button
+        android:id="@+id/btnTVUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="○"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTVRight" />
+
+    <Button
+        android:id="@+id/btnTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="32dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/btnTV2"
+        app:layout_constraintTop_toBottomOf="@+id/btnTVInfo" />
+
+    <Button
+        android:id="@+id/btnTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTVLeft" />
+
+    <Button
+        android:id="@+id/btnTV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@+id/btnTV2"
+        app:layout_constraintTop_toBottomOf="@+id/btnTVFormat" />
+
+    <Button
+        android:id="@+id/btnTV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:text="4"
+        app:layout_constraintEnd_toStartOf="@+id/btnTV5"
+        app:layout_constraintTop_toBottomOf="@+id/btnTV1" />
+
+    <Button
+        android:id="@+id/btnTV5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTV2" />
+
+    <Button
+        android:id="@+id/btnTV6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="6"
+        app:layout_constraintStart_toEndOf="@+id/btnTV5"
+        app:layout_constraintTop_toBottomOf="@+id/btnTV3" />
+
+    <Button
+        android:id="@+id/btnTV7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:text="7"
+        app:layout_constraintEnd_toStartOf="@+id/btnTV8"
+        app:layout_constraintTop_toBottomOf="@+id/btnTV4" />
+
+    <Button
+        android:id="@+id/btnTV8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTV5" />
+
+    <Button
+        android:id="@+id/btnTV9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        app:layout_constraintStart_toEndOf="@+id/btnTV8"
+        app:layout_constraintTop_toBottomOf="@+id/btnTV6" />
+
+    <Button
+        android:id="@+id/btnTV0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTV8" />
+
+    <Button
+        android:id="@+id/btnTVBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Back"
+        app:layout_constraintEnd_toStartOf="@+id/btnTV0"
+        app:layout_constraintTop_toBottomOf="@+id/btnTV7" />
+
+    <Button
+        android:id="@+id/btnTVTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="TV"
+        app:layout_constraintStart_toEndOf="@+id/btnTV0"
+        app:layout_constraintTop_toBottomOf="@+id/btnTV9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
